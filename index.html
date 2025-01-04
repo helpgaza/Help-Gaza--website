@@ -1,84 +1,130 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>غزة GAZA - لنكن جزءًا من التغيير</title>
+    <title>GazaCoin - A Token of Hope</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <header>
         <nav>
-            <h1 class="logo">عملة غزة GAZA</h1>
+            <h1 class="logo">GazaCoin</h1>
             <ul>
-                <li><a href="#about">عن العملة</a></li>
-                <li><a href="#impact">معاناة غزة</a></li>
-                <li><a href="#support">كيف يمكنك المساعدة</a></li>
-                <li><a href="#contact">تواصل معنا</a></li>
+                <li><a href="#about" class="lang" data-key="about">About</a></li>
+                <li><a href="#impact" class="lang" data-key="impact">Gaza's Struggles</a></li>
+                <li><a href="#support" class="lang" data-key="support">How to Support</a></li>
+                <li><a href="#contract" class="lang" data-key="contract">Contract Address</a></li>
+                <li><a href="#contact" class="lang" data-key="contact">Contact Us</a></li>
             </ul>
+            <div>
+                <button id="en-btn">English</button>
+                <button id="ar-btn">العربية</button>
+            </div>
         </nav>
     </header>
 
     <section id="hero">
-        <h1>معاناة غزة... مسؤوليتنا</h1>
-        <p>نحو دعم إنساني مستدام يخفف من معاناة الأطفال والأسر في غزة. <br> مع عملة غزة الرقمية، كن جزءًا من الأمل!</p>
-        <button onclick="window.location.href='#support'">انضم إلى المبادرة</button>
+        <h1 class="lang" data-key="hero-title">Gaza's Struggles... Our Responsibility</h1>
+        <p class="lang" data-key="hero-desc">Together, we can support children and families in Gaza through sustainable humanitarian aid. Join the movement with GazaCoin!</p>
+        <button onclick="window.location.href='#support'" class="lang" data-key="join-btn">Join the Initiative</button>
     </section>
 
     <section id="about">
-        <h2>عن عملة غزة GAZA</h2>
-        <p>تم إنشاء العملة الرقمية "غزة GAZA" كجزء من مبادرة تهدف إلى توفير الدعم المالي المباشر لأسر غزة التي تعاني من ظروف معيشية صعبة، عبر توزيع الأرباح على المحتاجين بشكل مستدام وشفاف.</p>
+        <h2 class="lang" data-key="about-title">About GazaCoin</h2>
+        <p class="lang" data-key="about-desc">GazaCoin is a digital currency designed to provide direct financial support to struggling families in Gaza. Our mission is to offer sustainable aid by distributing the project’s revenue to those in need in a transparent and fair way.</p>
     </section>
 
     <section id="impact">
-        <h2>قصص المعاناة في غزة</h2>
+        <h2 class="lang" data-key="impact-title">Stories of Gaza's Struggles</h2>
         <div class="image-gallery">
             <div class="image-card">
-                <img src="https://via.placeholder.com/400x300?text=صورة+طفل" alt="طفل يعاني من الجوع">
-                <p>طفل ينتظر الطعام وسط ظروف معيشية قاسية.</p>
+                <img src="https://via.placeholder.com/400x300?text=Child+in+Need" alt="Child in Need">
+                <p class="lang" data-key="story1">A child waiting for food amid harsh living conditions.</p>
             </div>
             <div class="image-card">
-                <img src="https://via.placeholder.com/400x300?text=شهداء" alt="شهداء غزة">
-                <p>ذكرى الشهداء الذين فقدناهم بسبب القصف.</p>
+                <img src="https://via.placeholder.com/400x300?text=In+Memory+of+Victims" alt="In Memory of Victims">
+                <p class="lang" data-key="story2">Honoring the memory of those who lost their lives.</p>
             </div>
             <div class="image-card">
-                <img src="https://via.placeholder.com/400x300?text=أسر+تحت+الحصار" alt="أسرة تحت الحصار">
-                <p>أسرة فلسطينية فقدت منزلها وتعيش في مأوى.</p>
+                <img src="https://via.placeholder.com/400x300?text=Displaced+Family" alt="Displaced Family">
+                <p class="lang" data-key="story3">A displaced family living in a shelter after losing their home.</p>
             </div>
         </div>
     </section>
 
-    <section id="support">
-        <h2>كيف يمكنك المساعدة؟</h2>
-        <p>يمكنك المساهمة عبر الاستثمار في العملة الرقمية "غزة GAZA"، حيث يتم استخدام العائدات لدعم الأسر المتضررة بشكل مباشر.</p>
-        <ul>
-            <li>شراء العملة الرقمية والمساهمة في المشروع.</li>
-            <li>نشر الوعي عن المبادرة على وسائل التواصل الاجتماعي.</li>
-            <li>مشاركة قصص النجاح لتشجيع الآخرين.</li>
-        </ul>
-    </section>
-
-    <section id="contact">
-        <h2>تواصل معنا</h2>
-        <form>
-            <label for="name">الاسم:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">البريد الإلكتروني:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">رسالتك:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">إرسال</button>
-        </form>
+    <section id="contract">
+        <h2 class="lang" data-key="contract-title">Contract Address</h2>
+        <p class="lang" data-key="contract-desc">This is the official contract address for GazaCoin:</p>
+        <div class="contract-box">
+            <code>0xYourSmartContractAddressHere</code>
+            <button onclick="navigator.clipboard.writeText('0xYourSmartContractAddressHere')" class="lang" data-key="copy-btn">Copy Address</button>
+        </div>
     </section>
 
     <footer>
-        <p>جميع الحقوق محفوظة © 2025 | عملة غزة GAZA - لأجل الأمل والحياة.</p>
+        <p class="lang" data-key="footer">All rights reserved © 2025 | GazaCoin - A Token of Hope and Life.</p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script>
+        const translations = {
+            en: {
+                "about": "About",
+                "impact": "Gaza's Struggles",
+                "support": "How to Support",
+                "contract": "Contract Address",
+                "contact": "Contact Us",
+                "hero-title": "Gaza's Struggles... Our Responsibility",
+                "hero-desc": "Together, we can support children and families in Gaza through sustainable humanitarian aid. Join the movement with GazaCoin!",
+                "join-btn": "Join the Initiative",
+                "about-title": "About GazaCoin",
+                "about-desc": "GazaCoin is a digital currency designed to provide direct financial support to struggling families in Gaza.",
+                "impact-title": "Stories of Gaza's Struggles",
+                "story1": "A child waiting for food amid harsh living conditions.",
+                "story2": "Honoring the memory of those who lost their lives.",
+                "story3": "A displaced family living in a shelter after losing their home.",
+                "contract-title": "Contract Address",
+                "contract-desc": "This is the official contract address for GazaCoin:",
+                "copy-btn": "Copy Address",
+                "footer": "All rights reserved © 2025 | GazaCoin - A Token of Hope and Life."
+            },
+            ar: {
+                "about": "عن غزة كوين",
+                "impact": "معاناة غزة",
+                "support": "كيف تدعمنا",
+                "contract": "عنوان العقد",
+                "contact": "تواصل معنا",
+                "hero-title": "معاناة غزة... مسؤوليتنا",
+                "hero-desc": "معًا، يمكننا دعم الأطفال والعائلات في غزة من خلال المساعدات الإنسانية المستدامة. انضم إلى المبادرة مع GazaCoin!",
+                "join-btn": "انضم إلى المبادرة",
+                "about-title": "عن غزة كوين",
+                "about-desc": "GazaCoin هي عملة رقمية تهدف إلى توفير الدعم المالي المباشر للأسر المحتاجة في غزة.",
+                "impact-title": "قصص المعاناة في غزة",
+                "story1": "طفل ينتظر الطعام وسط ظروف معيشية قاسية.",
+                "story2": "تكريم ذكرى من فقدوا أرواحهم.",
+                "story3": "عائلة مشردة تعيش في مأوى بعد فقدان منزلها.",
+                "contract-title": "عنوان العقد",
+                "contract-desc": "هذا هو عنوان العقد الرسمي لـ GazaCoin:",
+                "copy-btn": "نسخ العنوان",
+                "footer": "جميع الحقوق محفوظة © 2025 | غزة كوين - رمز الأمل والحياة."
+            }
+        };
+
+        function setLanguage(lang) {
+            document.querySelectorAll('.lang').forEach((el) => {
+                const key = el.getAttribute('data-key');
+                el.innerText = translations[lang][key];
+            });
+        }
+
+        // Detect browser language and set default
+        const browserLang = navigator.language.slice(0, 2);
+        setLanguage(browserLang === 'ar' ? 'ar' : 'en');
+
+        // Language switch buttons
+        document.getElementById('en-btn').addEventListener('click', () => setLanguage('en'));
+        document.getElementById('ar-btn').addEventListener('click', () => setLanguage('ar'));
+    </script>
+
 </body>
 </html>
