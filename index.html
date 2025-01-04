@@ -11,83 +11,132 @@
         <nav>
             <h1 class="logo">GazaCoin</h1>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#impact">Gaza's Struggles</a></li>
-                <li><a href="#support">How to Support</a></li>
-                <li><a href="#contract">Contract Address</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#about" class="lang" data-key="about">About</a></li>
+                <li><a href="#impact" class="lang" data-key="impact">Gaza's Struggles</a></li>
+                <li><a href="#support" class="lang" data-key="support">How to Support</a></li>
+                <li><a href="#profit" class="lang" data-key="profit">Investor Benefits</a></li>
+                <li><a href="#contract" class="lang" data-key="contract">Contract Address</a></li>
+                <li><a href="#contact" class="lang" data-key="contact">Contact Us</a></li>
             </ul>
+            <select id="language-selector">
+                <option value="en">English</option>
+                <option value="ar">العربية</option>
+            </select>
         </nav>
     </header>
 
     <section id="hero">
-        <h1>Gaza's Struggles... Our Responsibility</h1>
-        <p>Together, we can support children and families in Gaza through sustainable humanitarian aid. <br> Join the movement with GazaCoin!</p>
-        <button onclick="window.location.href='#support'">Join the Initiative</button>
+        <h1 class="lang" data-key="hero-title">Gaza's Struggles... Our Responsibility</h1>
+        <p class="lang" data-key="hero-desc">Together, we can support children and families in Gaza through sustainable humanitarian aid. Join the movement with GazaCoin!</p>
+        <button onclick="window.location.href='#support'" class="lang" data-key="join-btn">Join the Initiative</button>
     </section>
 
     <section id="about">
-        <h2>About GazaCoin</h2>
-        <p>GazaCoin is a digital currency designed to provide direct financial support to struggling families in Gaza. Our mission is to offer sustainable aid by distributing the project’s revenue to those in need in a transparent and fair way.</p>
+        <h2 class="lang" data-key="about-title">About GazaCoin</h2>
+        <p class="lang" data-key="about-desc">GazaCoin is a digital currency designed to provide direct financial support to struggling families in Gaza. Our mission is to offer sustainable aid by distributing the project’s revenue to those in need in a transparent and fair way.</p>
+        <img src="https://via.placeholder.com/600x400?text=About+GazaCoin" alt="About GazaCoin">
     </section>
 
     <section id="impact">
-        <h2>Stories of Gaza's Struggles</h2>
+        <h2 class="lang" data-key="impact-title">Stories of Gaza's Struggles</h2>
         <div class="image-gallery">
             <div class="image-card">
                 <img src="https://via.placeholder.com/400x300?text=Child+in+Need" alt="Child in Need">
-                <p>A child waiting for food amid harsh living conditions.</p>
+                <p class="lang" data-key="story1">A child waiting for food amid harsh living conditions.</p>
             </div>
             <div class="image-card">
                 <img src="https://via.placeholder.com/400x300?text=In+Memory+of+Victims" alt="In Memory of Victims">
-                <p>Honoring the memory of those who lost their lives.</p>
+                <p class="lang" data-key="story2">Honoring the memory of those who lost their lives.</p>
             </div>
             <div class="image-card">
                 <img src="https://via.placeholder.com/400x300?text=Displaced+Family" alt="Displaced Family">
-                <p>A displaced family living in a shelter after losing their home.</p>
+                <p class="lang" data-key="story3">A displaced family living in a shelter after losing their home.</p>
             </div>
         </div>
     </section>
 
     <section id="support">
-        <h2>How You Can Support</h2>
-        <p>You can contribute by investing in GazaCoin, where the funds are directly used to support affected families.</p>
-        <ul>
-            <li>Buy GazaCoin to be part of the initiative.</li>
-            <li>Spread awareness about the initiative on social media.</li>
-            <li>Share success stories to inspire others.</li>
-        </ul>
+        <h2 class="lang" data-key="support-title">How You Can Support</h2>
+        <p class="lang" data-key="support-desc">You can contribute by investing in GazaCoin, where the funds are directly used to support affected families.</p>
+        <img src="https://via.placeholder.com/600x400?text=Support+Image" alt="Support GazaCoin">
+    </section>
+
+    <section id="profit">
+        <h2 class="lang" data-key="profit-title">Investor Benefits</h2>
+        <p class="lang" data-key="profit-desc">By buying GazaCoin, you not only support a humanitarian cause, but you also gain an opportunity to profit. If the coin’s value increases, investors can sell their holdings at a profit. All general project profits contribute directly to humanitarian aid.</p>
+        <img src="https://via.placeholder.com/600x400?text=Investor+Benefits" alt="Investor Benefits">
     </section>
 
     <section id="contract">
-        <h2>Contract Address</h2>
-        <p>This is the official contract address for GazaCoin:</p>
+        <h2 class="lang" data-key="contract-title">Contract Address</h2>
+        <p class="lang" data-key="contract-desc">This is the official contract address for GazaCoin:</p>
         <div class="contract-box">
-            <code>0xYourSmartContractAddressHere</code> <!-- ضع عنوان العقد هنا -->
-            <button onclick="navigator.clipboard.writeText('0xYourSmartContractAddressHere')">Copy Address</button>
+            <code>0xYourSmartContractAddressHere</code>
+            <button onclick="navigator.clipboard.writeText('0xYourSmartContractAddressHere')" class="lang" data-key="copy-btn">Copy Address</button>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Your Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Send</button>
-        </form>
-    </section>
-
     <footer>
-        <p>All rights reserved © 2025 | GazaCoin - A Token of Hope and Life.</p>
+        <p class="lang" data-key="footer">All rights reserved © 2025 | GazaCoin - A Token of Hope and Life.</p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script>
+        const translations = {
+            en: {
+                "about": "About",
+                "impact": "Gaza's Struggles",
+                "support": "How to Support",
+                "profit": "Investor Benefits",
+                "contract": "Contract Address",
+                "contact": "Contact Us",
+                "hero-title": "Gaza's Struggles... Our Responsibility",
+                "hero-desc": "Together, we can support children and families in Gaza through sustainable humanitarian aid. Join the movement with GazaCoin!",
+                "join-btn": "Join the Initiative",
+                "about-title": "About GazaCoin",
+                "about-desc": "GazaCoin is a digital currency designed to provide direct financial support to struggling families in Gaza.",
+                "profit-title": "Investor Benefits",
+                "profit-desc": "By buying GazaCoin, you not only support a humanitarian cause, but you also gain an opportunity to profit.",
+                "contract-title": "Contract Address",
+                "contract-desc": "This is the official contract address for GazaCoin:",
+                "copy-btn": "Copy Address",
+                "footer": "All rights reserved © 2025 | GazaCoin - A Token of Hope and Life."
+            },
+            ar: {
+                "about": "عن GazaCoin",
+                "impact": "قصص المعاناة",
+                "support": "كيفية المساعدة",
+                "profit": "مزايا المستثمرين",
+                "contract": "عنوان العقد",
+                "contact": "تواصل معنا",
+                "hero-title": "معاناة غزة... مسؤوليتنا",
+                "hero-desc": "معًا، يمكننا دعم الأطفال والعائلات في غزة من خلال المساعدات الإنسانية المستدامة. انضم إلى المبادرة مع GazaCoin!",
+                "join-btn": "انضم إلى المبادرة",
+                "about-title": "عن GazaCoin",
+                "about-desc": "عملة رقمية تهدف إلى توفير الدعم المالي المباشر للأسر المحتاجة.",
+                "profit-title": "مزايا المستثمرين",
+                "profit-desc": "من خلال شراء GazaCoin، يمكنك تحقيق أرباح في حال ارتفاع قيمتها، بينما تساهم الأرباح العامة في المساعدات الإنسانية.",
+                "contract-title": "عنوان العقد",
+                "contract-desc": "هذا هو عنوان العقد الرسمي لـ GazaCoin:",
+                "copy-btn": "نسخ العنوان",
+                "footer": "جميع الحقوق محفوظة © 2025 | GazaCoin - رمز الأمل والحياة."
+            }
+        };
+
+        const languageSelector = document.getElementById('language-selector');
+        languageSelector.addEventListener('change', (e) => {
+            const lang = e.target.value;
+            setLanguage(lang);
+        });
+
+        function setLanguage(lang) {
+            document.querySelectorAll('.lang').forEach((el) => {
+                const key = el.getAttribute('data-key');
+                el.innerText = translations[lang][key];
+            });
+        }
+
+        const browserLang = navigator.language.slice(0, 2);
+        setLanguage(browserLang === 'ar' ? 'ar' : 'en');
+    </script>
 </body>
 </html>
